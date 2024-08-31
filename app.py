@@ -9,7 +9,7 @@ def main():
     custom_css = """
         <style>
             body {
-                font-family: Arial, serif;
+                font-family: Arial, serif,Roboto;
                 font-size: 32px;
             }
             h1 {
