@@ -36,7 +36,6 @@ def preprocess_and_train_model():
     model.fit(X_train, y_train)
     
     return model
-
 # Function to make predictions
 def predict(model, input_data):
     return model.predict(input_data)
