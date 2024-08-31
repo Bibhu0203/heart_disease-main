@@ -2,6 +2,8 @@ import streamlit as st
 import numpy as np
 from model import preprocess_and_train_model, predict, fetch_heart_disease_data
 
+
+#Application Page used to deploy the Model
 def main():
     # Fetch and preprocess data, and train model
     custom_css = """
