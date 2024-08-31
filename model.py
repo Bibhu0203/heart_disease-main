@@ -24,7 +24,10 @@ def preprocess_and_train_model():
     imputer = SimpleImputer(strategy='mean')
     heart_disease_df_imputed = pd.DataFrame(imputer.fit_transform(heart_disease_df), columns=heart_disease_df.columns)
     
-    # Split data into features and target
+    # # Split data into features and target
+    # X = heart_disease_df_imputed.drop('target', axis=1)
+    # y = heart_disease_df_imputed['target']
+    
     X = heart_disease_df_imputed.drop('target', axis=1)
     y = heart_disease_df_imputed['target']
     

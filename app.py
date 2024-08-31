@@ -2,14 +2,14 @@ import streamlit as st
 import numpy as np
 from model import preprocess_and_train_model, predict, fetch_heart_disease_data
 
-
 #Application Page used to deploy the Model
+
 def main():
     # Fetch and preprocess data, and train model
     custom_css = """
         <style>
             body {
-                font-family: Arial, serif,Roboto;
+                font-family: Arial, serif;
                 font-size: 32px;
             }
             h1 {
@@ -18,6 +18,7 @@ def main():
             }
         </style>
     """
+    
     st.markdown(custom_css, unsafe_allow_html=True)
     model = preprocess_and_train_model()
     
